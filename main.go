@@ -71,4 +71,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if m.Content == "~pong" {
 		s.ChannelMessageSend(m.ChannelID, "Ping!")
 	}
+
+	if m.Content == "mari" {
+		s.ChannelMessageSend(m.ChannelID, "El amorcito eterno de EDI")
+	}
 }
